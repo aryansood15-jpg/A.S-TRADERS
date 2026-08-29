@@ -110,24 +110,29 @@
 </head>
 <body class="bg-white text-slate-800 antialiased selection:bg-emerald-700 selection:text-white pb-20 sm:pb-0">
 
-  <!-- Top Announcement Bar -->
-  <aside class="bg-slate-950 text-slate-300 text-xs py-2.5 px-4 border-b border-slate-800">
-    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-3">
-      <div class="flex items-center space-x-3">
-        <span class="inline-flex items-center text-emerald-400 font-semibold">
-          <i class="fa-solid fa-certificate mr-1.5 text-amber-400"></i> Wholesale Veterinary & Livestock Formulations
+  <!-- Phone-Optimized Top Announcement Bar -->
+  <aside class="bg-slate-950 text-slate-300 py-2 px-3 sm:px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-2 text-[11px] sm:text-xs">
+      <!-- Left: Title & Hours -->
+      <div class="flex items-center space-x-2 truncate">
+        <span class="inline-flex items-center text-emerald-400 font-semibold truncate">
+          <i class="fa-solid fa-certificate mr-1.5 text-amber-400 shrink-0"></i>
+          <span class="sm:hidden">Wholesale Veterinary Feed</span>
+          <span class="hidden sm:inline">Wholesale Veterinary & Livestock Formulations</span>
         </span>
-        <span class="hidden md:inline text-slate-700">|</span>
-        <span class="hidden md:inline text-slate-400">
-          <i class="fa-regular fa-clock text-amber-400 mr-1.5"></i> Mon - Sat: 9:00 AM - 8:00 PM
+        <span class="hidden lg:inline text-slate-700">|</span>
+        <span class="hidden lg:inline text-slate-400">
+          <i class="fa-regular fa-clock text-amber-400 mr-1"></i> Mon - Sat: 9:00 AM - 8:00 PM
         </span>
       </div>
-      <div class="flex items-center space-x-6">
-        <a href="mailto:info@as-traders-india.uk" class="hover:text-amber-400 transition flex items-center">
+
+      <!-- Right: Contact (Clean on Mobile, Full on Desktop) -->
+      <div class="flex items-center space-x-4 shrink-0 font-medium">
+        <a href="mailto:info@as-traders-india.uk" class="hover:text-amber-400 transition hidden md:flex items-center text-slate-300">
           <i class="fa-regular fa-envelope text-amber-400 mr-1.5"></i>info@as-traders-india.uk
         </a>
-        <a href="tel:+918847687578" class="text-amber-400 font-bold hover:underline flex items-center">
-          <i class="fa-solid fa-phone mr-1.5"></i>+91-8847687578
+        <a href="tel:+918847687578" class="text-amber-400 font-bold hover:underline flex items-center bg-slate-900/90 sm:bg-transparent px-2.5 py-1 sm:p-0 rounded-full border border-slate-800 sm:border-0 shadow-sm sm:shadow-none">
+          <i class="fa-solid fa-phone mr-1.5 text-[10px] sm:text-xs"></i>+91-8847687578
         </a>
       </div>
     </div>
@@ -139,7 +144,7 @@
       <a href="#" class="flex items-center py-2" aria-label="A.S. Traders Home">
         <img src="https://raw.githubusercontent.com/aryansood15-jpg/A.S-TRADERS/main/gemini-svg%20(2).svg" 
              alt="A.S. TRADERS Official Brand Logo" 
-             class="h-12 sm:h-16 w-auto max-w-[260px] sm:max-w-[320px] object-contain transition-transform duration-200 hover:scale-105" 
+             class="h-12 sm:h-16 w-auto max-w-[240px] sm:max-w-[320px] object-contain transition-transform duration-200 hover:scale-105" 
              onerror="this.src='https://raw.githubusercontent.com/aryansood15-jpg/A.S-TRADERS/main/gemini-svg.svg'; this.onerror=null;" />
       </a>
       <nav class="hidden lg:flex items-center space-x-8 text-sm font-semibold text-slate-600">
@@ -150,8 +155,8 @@
         <a href="#about" class="hover:text-emerald-700 transition">About Firm</a>
       </nav>
       <div class="flex items-center space-x-3">
-        <a href="https://wa.me/918847687578?text=Hello%20A.S.%20Traders,%20I%20want%20to%20inquire%20about%20dairy%20feed%20products." target="_blank" class="bg-emerald-700 hover:bg-emerald-800 text-white text-xs sm:text-sm font-semibold px-5 py-2.5 rounded-lg transition inline-flex items-center shadow-sm" aria-label="WhatsApp Inquiry">
-          <i class="fa-brands fa-whatsapp text-base mr-2"></i> WhatsApp Desk
+        <a href="https://wa.me/918847687578?text=Hello%20A.S.%20Traders,%20I%20want%20to%20inquire%20about%20dairy%20feed%20products." target="_blank" class="bg-emerald-700 hover:bg-emerald-800 text-white text-xs sm:text-sm font-semibold px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg transition inline-flex items-center shadow-sm" aria-label="WhatsApp Inquiry">
+          <i class="fa-brands fa-whatsapp text-base mr-1.5 sm:mr-2"></i> WhatsApp
         </a>
       </div>
     </div>
