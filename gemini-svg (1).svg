@@ -1,0 +1,27 @@
+<!-- Save this file as: favicon.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="favGold" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A67C1E" />
+      <stop offset="35%" stop-color="#FDF3CD" />
+      <stop offset="70%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#8C6212" />
+    </linearGradient>
+
+    <linearGradient id="favNavy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#192F4D" />
+      <stop offset="100%" stop-color="#091424" />
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(-195, 8) scale(1.05)">
+    <!-- Left Leg of A -->
+    <path d="M 270 24 L 220 162 L 244 162 L 257 124 L 302 124 L 293 98 L 266 98 L 282 52 Z" fill="url(#favNavy)" />
+    <!-- Navy S Body -->
+    <path d="M 312 44 C 322 26 348 24 366 32 C 382 39 388 54 382 70 C 376 84 358 96 342 104 C 328 111 322 118 322 126 C 322 138 334 148 348 148 C 358 148 368 142 374 135 L 386 150 C 374 162 358 168 342 168 C 314 168 296 148 296 124 C 296 102 312 88 332 78 C 348 70 358 62 360 52 C 362 44 356 38 346 38 C 334 38 324 46 318 56 Z" fill="url(#favNavy)" />
+    <!-- Gold Leg of A -->
+    <path d="M 270 24 L 292 24 L 334 116 L 312 116 L 294 74 L 282 52 Z" fill="url(#favGold)" />
+    <!-- Gold Swoop & Arrow -->
+    <path d="M 308 116 C 316 136 330 156 352 156 C 364 156 372 148 372 136 C 372 122 356 108 342 98 C 320 84 298 94 286 104 C 280 110 274 114 266 114 C 258 114 254 108 258 100 C 274 68 316 46 364 36 L 368 48 L 382 30 L 358 26 L 362 38 C 320 46 284 66 270 94 C 266 102 270 106 276 106 C 284 106 294 98 308 90 C 318 84 330 84 340 90 C 358 100 384 116 384 136 C 384 156 368 168 346 168 C 320 168 300 144 294 122 Z" fill="url(#favGold)" />
+  </g>
+</svg>
