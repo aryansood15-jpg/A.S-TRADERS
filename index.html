@@ -13,17 +13,17 @@
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
   <link rel="canonical" href="https://as-traders-india.uk/" />
 
-  <!-- Open Graph & Social Cards -->
+  <!-- Open Graph / Social Cards -->
   <meta property="og:locale" content="en_IN" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="A.S. TRADERS | Veterinary Animal Feed Supplements" />
   <meta property="og:description" content="Wholesale veterinary livestock feed supplements, chelated minerals, and calcium formulations." />
   <meta property="og:url" content="https://as-traders-india.uk/" />
   <meta property="og:site_name" content="A.S. TRADERS" />
-  <meta property="og:image" content="https://raw.githubusercontent.com/aryansood15-jpg/A.S-TRADERS/main/logo.png" />
+  <meta property="og:image" content="https://raw.githubusercontent.com/aryansood15-jpg/A.S-TRADERS/main/gemini-svg.svg" />
   
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/aryansood15-jpg/A.S-TRADERS/main/logo.png" />
+  <link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/aryansood15-jpg/A.S-TRADERS/main/gemini-svg.svg" />
 
   <!-- CDNs & Fonts -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -42,9 +42,17 @@
         "@id": "https://as-traders-india.uk/#organization",
         "name": "A.S. TRADERS",
         "url": "https://as-traders-india.uk/",
-        "logo": "https://raw.githubusercontent.com/aryansood15-jpg/A.S-TRADERS/main/logo.png",
+        "logo": "https://raw.githubusercontent.com/aryansood15-jpg/A.S-TRADERS/main/gemini-svg.svg",
         "telephone": "+918847687578",
-        "email": "info@as-traders-india.uk"
+        "email": "info@as-traders-india.uk",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "117 Raj Guru Nagar",
+          "addressLocality": "Moga",
+          "addressRegion": "Punjab",
+          "postalCode": "142001",
+          "addressCountry": "IN"
+        }
       },
       {
         "@type": "ItemList",
@@ -70,7 +78,6 @@
     html { scroll-behavior: smooth; }
     .hide-scrollbar::-webkit-scrollbar { display: none; }
     .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-    
     .filter-btn.active {
       background-color: #047857;
       color: #ffffff;
@@ -80,16 +87,23 @@
 </head>
 <body class="bg-white text-slate-800 antialiased selection:bg-emerald-700 selection:text-white pb-20 sm:pb-0">
 
-  <!-- Clean Utility Top Bar (Address & Proprietor Removed) -->
+  <!-- Enhanced Top Bar (No Address / No Proprietor) -->
   <aside class="bg-slate-950 text-slate-300 text-xs py-2.5 px-4 border-b border-slate-800">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
-      <div class="flex items-center space-x-3">
-        <a href="mailto:info@as-traders-india.uk" class="hover:text-amber-400 transition flex items-center">
-          <i class="fa-regular fa-envelope text-amber-400 mr-2"></i>info@as-traders-india.uk
-        </a>
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-3">
+      <div class="flex items-center space-x-4">
+        <span class="inline-flex items-center text-emerald-400 font-semibold">
+          <i class="fa-solid fa-certificate mr-1.5 text-amber-400"></i> Wholesale Veterinary & Feed Formulations
+        </span>
+        <span class="hidden md:inline text-slate-700">|</span>
+        <span class="hidden md:inline text-slate-400">
+          <i class="fa-regular fa-clock text-amber-400 mr-1.5"></i> Mon - Sat: 9:00 AM - 8:00 PM
+        </span>
       </div>
-      <div class="flex items-center space-x-3">
-        <a href="tel:+918847687578" class="text-amber-400 font-semibold hover:underline flex items-center">
+      <div class="flex items-center space-x-6">
+        <a href="mailto:info@as-traders-india.uk" class="hover:text-amber-400 transition flex items-center">
+          <i class="fa-regular fa-envelope text-amber-400 mr-1.5"></i>info@as-traders-india.uk
+        </a>
+        <a href="tel:+918847687578" class="text-amber-400 font-bold hover:underline flex items-center">
           <i class="fa-solid fa-phone mr-1.5"></i>+91-8847687578
         </a>
       </div>
@@ -99,8 +113,8 @@
   <!-- Navigation Header -->
   <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      <a href="#" class="flex items-center space-x-3" aria-label="A.S. Traders Home">
-        <img src="https://raw.githubusercontent.com/aryansood15-jpg/A.S-TRADERS/main/logo.png" alt="A.S. TRADERS Official Logo" class="h-14 w-auto object-contain mix-blend-multiply" />
+      <a href="#" class="flex items-center" aria-label="A.S. Traders Home">
+        <img src="https://raw.githubusercontent.com/aryansood15-jpg/A.S-TRADERS/main/gemini-svg.svg" alt="A.S. TRADERS Official Logo" class="h-14 w-auto object-contain" onerror="this.src='https://raw.githubusercontent.com/aryansood15-jpg/A.S-TRADERS/main/logo.png'; this.classList.add('mix-blend-multiply');" />
       </a>
       <nav class="hidden lg:flex items-center space-x-8 text-sm font-semibold text-slate-600">
         <a href="#species" class="hover:text-emerald-700 transition">Target Species</a>
@@ -120,7 +134,7 @@
     <!-- Hero Section -->
     <section class="relative bg-slate-900 text-white py-16 lg:py-24 overflow-hidden">
       <div class="absolute inset-0 z-0">
-        <img src="https://images.unsplash.com/photo-1546445317-29f4545e9d53?auto=format&fit=crop&w=1920&q=80" alt="Dairy Cattle in Pasture" class="w-full h-full object-cover opacity-25" />
+        <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=1920&q=80" alt="Dairy Cattle in Pasture" class="w-full h-full object-cover opacity-25" />
         <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/95 to-transparent"></div>
       </div>
 
@@ -149,7 +163,7 @@
         <div class="lg:col-span-5">
           <div class="bg-white text-slate-900 rounded-2xl p-6 sm:p-8 shadow-2xl border border-slate-100">
             <div class="text-center mb-4">
-              <img src="https://raw.githubusercontent.com/aryansood15-jpg/A.S-TRADERS/main/logo.png" alt="A.S. Traders" class="h-12 mx-auto mb-1 object-contain mix-blend-multiply" />
+              <img src="https://raw.githubusercontent.com/aryansood15-jpg/A.S-TRADERS/main/gemini-svg.svg" alt="A.S. Traders Logo" class="h-10 mx-auto mb-1 object-contain" onerror="this.src='https://raw.githubusercontent.com/aryansood15-jpg/A.S-TRADERS/main/logo.png'; this.classList.add('mix-blend-multiply');" />
               <h2 class="text-lg font-extrabold text-slate-900">Commercial Price Inquiry</h2>
               <p class="text-xs text-slate-500">Get wholesale rates directly on WhatsApp.</p>
             </div>
@@ -196,7 +210,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <div class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm group">
             <div class="h-40 overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Dairy Cattle" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+              <img src="https://images.unsplash.com/photo-1546445317-29f4545e9d53?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Dairy Cattle and Buffalo Nutrition" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
               <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent"></div>
               <span class="absolute bottom-3 left-3 text-white font-bold text-base">Dairy Cattle & Buffalo</span>
             </div>
@@ -209,7 +223,7 @@
 
           <div class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm group">
             <div class="h-40 overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1527153857715-3908f2bae5e8?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Young Calf Feeding" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+              <img src="https://images.unsplash.com/photo-1527153857715-3908f2bae5e8?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Young Calf Feeding and Growth" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
               <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent"></div>
               <span class="absolute bottom-3 left-3 text-white font-bold text-base">Calves & Young Stock</span>
             </div>
@@ -222,7 +236,7 @@
 
           <div class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm group">
             <div class="h-40 overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Poultry and Broiler Birds" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+              <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Poultry Broiler and Layer Birds" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
               <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent"></div>
               <span class="absolute bottom-3 left-3 text-white font-bold text-base">Poultry, Broilers & Layers</span>
             </div>
@@ -235,7 +249,7 @@
 
           <div class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm group">
             <div class="h-40 overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Sheep Goat and Cattle Farm" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+              <img src="https://images.unsplash.com/photo-1535083783855-76ae62b2914e?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Equine Sheep and Goat Health" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
               <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent"></div>
               <span class="absolute bottom-3 left-3 text-white font-bold text-base">Sheep, Goat & Horses</span>
             </div>
@@ -271,7 +285,7 @@
         <article data-category="dairy" class="product-card bg-white border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:shadow-lg transition">
           <div>
             <div class="h-44 bg-slate-100 overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1546445317-29f4545e9d53?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="R.S. Rakshak Dairy Cattle Nutrition" class="w-full h-full object-cover" />
+              <img src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="R.S. Rakshak Dairy Cattle Nutrition" class="w-full h-full object-cover" />
               <span class="absolute top-3 left-3 bg-slate-900/90 text-amber-400 text-[11px] font-bold px-2.5 py-1 rounded">Rumen Buffer & Toxin Control</span>
             </div>
             <div class="p-6 pb-2">
@@ -325,7 +339,7 @@
         <article data-category="poultry dairy" class="product-card bg-white border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:shadow-lg transition">
           <div>
             <div class="h-44 bg-slate-100 overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1527153857715-3908f2bae5e8?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Calcium Phos AD3 Plus Cattle and Poultry" class="w-full h-full object-cover" />
+              <img src="https://images.unsplash.com/photo-1588714477688-cf28a50e94f7?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Calcium Phos AD3 Plus Cattle and Poultry" class="w-full h-full object-cover" />
               <span class="absolute top-3 left-3 bg-blue-800 text-white text-[11px] font-bold px-2.5 py-1 rounded">Calcium + Vit AD3</span>
             </div>
             <div class="p-6 pb-2">
@@ -352,7 +366,7 @@
         <article data-category="poultry" class="product-card bg-white border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:shadow-lg transition">
           <div>
             <div class="h-44 bg-slate-100 overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Cal Phos DCP Poultry Feed" class="w-full h-full object-cover" />
+              <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Cal Phos DCP Poultry Feed" class="w-full h-full object-cover" />
               <span class="absolute top-3 left-3 bg-indigo-800 text-white text-[11px] font-bold px-2.5 py-1 rounded">Poultry & Cattle DCP</span>
             </div>
             <div class="p-6 pb-2">
@@ -379,7 +393,7 @@
         <article data-category="dairy" class="product-card bg-white border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:shadow-lg transition">
           <div>
             <div class="h-44 bg-slate-100 overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Heat Forte Cattle Breeding Powder" class="w-full h-full object-cover" />
+              <img src="https://images.unsplash.com/photo-1546445317-29f4545e9d53?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Heat Forte Cattle Breeding Powder" class="w-full h-full object-cover" />
               <span class="absolute top-3 left-3 bg-rose-800 text-white text-[11px] font-bold px-2.5 py-1 rounded">Reproduction Care</span>
             </div>
             <div class="p-6 pb-2">
@@ -406,7 +420,7 @@
         <article data-category="health" class="product-card bg-white border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:shadow-lg transition">
           <div>
             <div class="h-44 bg-slate-100 overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1546445317-29f4545e9d53?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="R.S. Digestive Mixture Herbal Livestock" class="w-full h-full object-cover" />
+              <img src="https://images.unsplash.com/photo-1596733430284-f7437764b1a9?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="R.S. Digestive Mixture Herbal Livestock" class="w-full h-full object-cover" />
               <span class="absolute top-3 left-3 bg-amber-700 text-white text-[11px] font-bold px-2.5 py-1 rounded">Herbal Digestion</span>
             </div>
             <div class="p-6 pb-2">
@@ -433,7 +447,7 @@
         <article data-category="dairy" class="product-card bg-white border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:shadow-lg transition">
           <div>
             <div class="h-44 bg-slate-100 overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="R.S. Cal-12 Liquid Calcium Boost" class="w-full h-full object-cover" />
+              <img src="https://images.unsplash.com/photo-1527153857715-3908f2bae5e8?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="R.S. Cal-12 Liquid Calcium Boost" class="w-full h-full object-cover" />
               <span class="absolute top-3 left-3 bg-cyan-800 text-white text-[11px] font-bold px-2.5 py-1 rounded">High Calcium Liquid</span>
             </div>
             <div class="p-6 pb-2">
@@ -460,7 +474,7 @@
         <article data-category="health" class="product-card bg-white border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:shadow-lg transition">
           <div>
             <div class="h-44 bg-slate-100 overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1527153857715-3908f2bae5e8?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Ferrical-L Iron Supplement" class="w-full h-full object-cover" />
+              <img src="https://images.unsplash.com/photo-1568644396922-5c3bfae12521?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Ferrical-L Iron Supplement" class="w-full h-full object-cover" />
               <span class="absolute top-3 left-3 bg-amber-800 text-white text-[11px] font-bold px-2.5 py-1 rounded">Iron & Blood Formula</span>
             </div>
             <div class="p-6 pb-2">
@@ -487,7 +501,7 @@
         <article data-category="dairy" class="product-card bg-white border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:shadow-lg transition">
           <div>
             <div class="h-44 bg-slate-100 overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1546445317-29f4545e9d53?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="R.S. Buff Rumen Acidosis Guard" class="w-full h-full object-cover" />
+              <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="R.S. Buff Rumen Acidosis Guard" class="w-full h-full object-cover" />
               <span class="absolute top-3 left-3 bg-emerald-800 text-white text-[11px] font-bold px-2.5 py-1 rounded">Rumen Acidosis Guard</span>
             </div>
             <div class="p-6 pb-2">
@@ -573,7 +587,7 @@
 
           <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-md">
             <div class="flex items-center space-x-3 mb-6 pb-4 border-b border-slate-100">
-              <img src="https://raw.githubusercontent.com/aryansood15-jpg/A.S-TRADERS/main/logo.png" alt="A.S. TRADERS" class="h-10 object-contain mix-blend-multiply" />
+              <img src="https://raw.githubusercontent.com/aryansood15-jpg/A.S-TRADERS/main/gemini-svg.svg" alt="A.S. TRADERS" class="h-10 object-contain" onerror="this.src='https://raw.githubusercontent.com/aryansood15-jpg/A.S-TRADERS/main/logo.png'; this.classList.add('mix-blend-multiply');" />
               <div>
                 <h3 class="text-base font-bold text-slate-900 leading-tight">Official Business Information</h3>
                 <span class="text-xs text-slate-500">Deals with Animal Feed Supplements</span>
@@ -610,7 +624,7 @@
     </section>
   </main>
 
-  <!-- Clean Single-Line Footer -->
+  <!-- Clean Professional Single-Line Footer -->
   <footer class="border-t border-slate-200 py-6 text-center text-xs text-slate-500 bg-white">
     <div class="max-w-7xl mx-auto px-4">
       <p>© 2026 A.S. TRADERS. All Rights Reserved. Feed Supplements Not For Medicinal Use.</p>
