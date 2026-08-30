@@ -37,8 +37,8 @@
   <!-- CDNs & Fonts -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <!-- Schema.org JSON-LD Structured Data with FAQPage -->
@@ -105,13 +105,13 @@
   </script>
 </head>
 
-<body class="bg-white text-slate-900 font-['Plus_Jakarta_Sans',sans-serif]">
+<body class="bg-white text-slate-900 font-['Plus_Jakarta_Sans',sans-serif] pt-20 sm:pt-24 lg:pt-28">
 
-  <!-- Navigation Header (Solid White, Clean Sticky Header) -->
-  <header class="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm">
+  <!-- Smart Auto-Hiding Navigation Header -->
+  <header id="main-header" class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-slate-200 shadow-sm transition-transform duration-300 ease-in-out">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-24 lg:h-28 flex items-center justify-between">
       
-      <!-- Big Official Brand Logo -->
+      <!-- Official Brand Logo -->
       <a href="#" class="flex items-center group py-1" aria-label="A.S. Traders Home">
         <img src="https://raw.githubusercontent.com/aryansood15-jpg/A.S-TRADERS/main/ChatGPT%20Image%20Aug%2031%2C%202026%2C%2012_31_12%20AM.png" 
              alt="A.S. TRADERS Official Brand Logo" 
@@ -128,7 +128,7 @@
         <a href="#about" class="hover:text-emerald-700 transition">About Firm</a>
       </nav>
 
-      <!-- WhatsApp Action Button -->
+      <!-- WhatsApp Button -->
       <div class="flex items-center space-x-3">
         <a href="https://wa.me/918847687578?text=Hello%20A.S.%20Traders,%20I%20want%20to%20inquire%20about%20dairy%20feed%20products." 
            target="_blank" 
@@ -696,6 +696,30 @@
 
   <!-- Scripts -->
   <script>
+    // Smart Scroll: Auto-Hide on Scroll Down, Reveal on Scroll Up
+    let lastScrollTop = 0;
+    const header = document.getElementById('main-header');
+
+    window.addEventListener('scroll', function() {
+      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+      // Only trigger once past the top navbar area
+      if (currentScroll > 100) {
+        if (currentScroll > lastScrollTop) {
+          // Scrolling Down -> Hide Navbar Upwards
+          header.classList.add('-translate-y-full');
+        } else {
+          // Scrolling Up -> Show Navbar
+          header.classList.remove('-translate-y-full');
+        }
+      } else {
+        // At the very top -> Always keep visible
+        header.classList.remove('-translate-y-full');
+      }
+
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    }, { passive: true });
+
     function filterProducts(category) {
       const buttons = document.querySelectorAll('.filter-btn');
       buttons.forEach(btn => {
