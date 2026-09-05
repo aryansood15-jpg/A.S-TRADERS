@@ -34,9 +34,19 @@
   <meta property="og:description" content="A.S. Traders in Moga supplies quality cattle feed supplements, liquid calcium, rumen buffers, and chelated minerals across India at wholesale rates." />
   <meta property="og:url" content="https://www.as-traders.in/" />
   <meta property="og:site_name" content="A.S. TRADERS" />
+  <!-- TODO: swap in a dedicated 1200x630 share image (product/farm photo) instead of the square logo for a better social preview -->
   <meta property="og:image" content="https://www.as-traders.in/logo.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="A.S. Traders Moga | Cattle Feed Supplements & Minerals" />
+  <meta name="twitter:description" content="A.S. Traders in Moga supplies quality cattle feed supplements, liquid calcium, rumen buffers, and chelated minerals across India at wholesale rates." />
+  <meta name="twitter:image" content="https://www.as-traders.in/logo.png" />
 
 <!-- Google tag (gtag.js) -->
+<!-- TODO: replace G-XXXXXXXXXX with your real GA4 Measurement ID — this placeholder is not tracking anything -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -60,6 +70,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   </noscript>
 
+  <!-- NOTE: Tailwind CDN ships the full framework + runtime compilation on every page load, which slows down
+       Core Web Vitals (a ranking factor). Once you have a build step available, replace this with a compiled,
+       purged static stylesheet (e.g. via the Tailwind CLI: npx tailwindcss -o ./styles.css --minify) and link
+       that file instead. Left as CDN here since no build pipeline was provided. -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Schema.org JSON-LD Structured Data -->
@@ -167,9 +181,9 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-24 lg:h-28 flex items-center justify-between">
       
     <!-- Official Brand Logo -->
-      <a href="#" class="flex items-center group py-1" aria-label="A.S. Traders Home">
+      <a href="/" class="flex items-center group py-1" aria-label="A.S. Traders Home">
         <img src="https://raw.githubusercontent.com/aryansood15-jpg/A.S-TRADERS/main/ChatGPT%20Image%20Aug%2031%2C%202026%2C%2012_31_12%20AM.png" 
-             alt="A.S. TRADERS Official Brand Logo" 
+             alt="A.S. Traders logo - cattle feed supplements Moga Punjab" 
              width="400"
              height="96"
              class="h-16 sm:h-20 lg:h-24 w-auto max-w-[280px] sm:max-w-[400px] lg:max-w-[480px] object-contain transition-transform duration-200 group-hover:scale-105" 
@@ -356,7 +370,7 @@
         <article data-category="dairy" class="product-card bg-white border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:shadow-lg transition">
           <div>
             <div class="h-48 bg-slate-100 overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1546445317-29f4545e9d53?auto=format&fit=crop&w=800&q=80" loading="lazy" alt="R.S. Rakshak Dairy Cattle Nutrition" width="800" height="400" class="w-full h-full object-cover" />
+              <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=800&q=80" loading="lazy" alt="R.S. Rakshak Dairy Cattle Nutrition" width="800" height="400" class="w-full h-full object-cover" />
               <span class="absolute top-3 left-3 bg-slate-900/90 text-amber-400 text-[11px] font-bold px-2.5 py-1 rounded">Rumen Buffer & Toxin Control</span>
             </div>
             <div class="p-6 pb-2">
@@ -391,7 +405,10 @@
               </div>
             </div>
           </div>
-          <div class="p-6 pt-2">
+          <div class="p-6 pt-2 space-y-2">
+            <a href="https://amzn.in/d/01XRTONZ" target="_blank" rel="noopener noreferrer" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 text-xs font-bold py-2.5 rounded-lg text-center transition flex items-center justify-center">
+              <i class="fa-brands fa-amazon mr-2 text-sm"></i> Buy on Amazon
+            </a>
             <a href="https://wa.me/918847687578?text=Hello%20A.S.%20Traders,%20please%20send%20quote%20for%20R.S.%20MIN%20FORTE%20CHELATED." target="_blank" rel="noopener noreferrer" class="w-full bg-slate-900 hover:bg-emerald-700 text-white text-xs font-bold py-2.5 rounded-lg text-center transition flex items-center justify-center">
               <i class="fa-brands fa-whatsapp mr-2 text-emerald-400 text-sm"></i> Inquire Price Quote
             </a>
@@ -437,7 +454,10 @@
               </div>
             </div>
           </div>
-          <div class="p-6 pt-2">
+          <div class="p-6 pt-2 space-y-2">
+            <a href="https://amzn.in/d/0g2zhYmJ" target="_blank" rel="noopener noreferrer" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 text-xs font-bold py-2.5 rounded-lg text-center transition flex items-center justify-center">
+              <i class="fa-brands fa-amazon mr-2 text-sm"></i> Buy on Amazon
+            </a>
             <a href="https://wa.me/918847687578?text=Hello%20A.S.%20Traders,%20please%20send%20quote%20for%20CAL-PHOS%20D.C.P.+." target="_blank" rel="noopener noreferrer" class="w-full bg-slate-900 hover:bg-emerald-700 text-white text-xs font-bold py-2.5 rounded-lg text-center transition flex items-center justify-center">
               <i class="fa-brands fa-whatsapp mr-2 text-emerald-400 text-sm"></i> Inquire Price Quote
             </a>
@@ -506,7 +526,10 @@
               </div>
             </div>
           </div>
-          <div class="p-6 pt-2">
+          <div class="p-6 pt-2 space-y-2">
+            <a href="https://amzn.in/d/02MOOzyH" target="_blank" rel="noopener noreferrer" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 text-xs font-bold py-2.5 rounded-lg text-center transition flex items-center justify-center">
+              <i class="fa-brands fa-amazon mr-2 text-sm"></i> Buy on Amazon
+            </a>
             <a href="https://wa.me/918847687578?text=Hello%20A.S.%20Traders,%20please%20send%20quote%20for%20R.S.%20CAL-12+%20Liquid." target="_blank" rel="noopener noreferrer" class="w-full bg-slate-900 hover:bg-emerald-700 text-white text-xs font-bold py-2.5 rounded-lg text-center transition flex items-center justify-center">
               <i class="fa-brands fa-whatsapp mr-2 text-emerald-400 text-sm"></i> Inquire Price Quote
             </a>
@@ -517,7 +540,7 @@
         <article data-category="health" class="product-card bg-white border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:shadow-lg transition">
           <div>
             <div class="h-48 bg-slate-100 overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1596733430284-f7437764b1a9?auto=format&fit=crop&w=800&q=80" loading="lazy" alt="Ferrical-L Iron Supplement Cattle Growth" width="800" height="400" class="w-full h-full object-cover" />
+              <img src="https://images.unsplash.com/photo-1594761051656-153a3f929e10?auto=format&fit=crop&w=800&q=80" loading="lazy" alt="Ferrical-L Iron Supplement Cattle Growth" width="800" height="400" class="w-full h-full object-cover" />
               <span class="absolute top-3 left-3 bg-amber-800 text-white text-[11px] font-bold px-2.5 py-1 rounded">Iron & Blood Formula</span>
             </div>
             <div class="p-6 pb-2">
@@ -529,7 +552,10 @@
               </div>
             </div>
           </div>
-          <div class="p-6 pt-2">
+          <div class="p-6 pt-2 space-y-2">
+            <a href="https://amzn.in/d/0aYDphx7" target="_blank" rel="noopener noreferrer" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 text-xs font-bold py-2.5 rounded-lg text-center transition flex items-center justify-center">
+              <i class="fa-brands fa-amazon mr-2 text-sm"></i> Buy on Amazon
+            </a>
             <a href="https://wa.me/918847687578?text=Hello%20A.S.%20Traders,%20please%20send%20quote%20for%20FERRICAL-L." target="_blank" rel="noopener noreferrer" class="w-full bg-slate-900 hover:bg-emerald-700 text-white text-xs font-bold py-2.5 rounded-lg text-center transition flex items-center justify-center">
               <i class="fa-brands fa-whatsapp mr-2 text-emerald-400 text-sm"></i> Inquire Price Quote
             </a>
@@ -540,7 +566,7 @@
         <article data-category="dairy" class="product-card bg-white border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:shadow-lg transition">
           <div>
             <div class="h-48 bg-slate-100 overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1546445317-29f4545e9d53?auto=format&fit=crop&w=800&q=80" loading="lazy" alt="R.S. Buff Rumen Acidosis Guard" width="800" height="400" class="w-full h-full object-cover" />
+              <img src="https://images.unsplash.com/photo-1560468660-6c11a19d7330?auto=format&fit=crop&w=800&q=80" loading="lazy" alt="R.S. Buff Rumen Acidosis Guard" width="800" height="400" class="w-full h-full object-cover" />
               <span class="absolute top-3 left-3 bg-emerald-800 text-white text-[11px] font-bold px-2.5 py-1 rounded">Rumen Acidosis Guard</span>
             </div>
             <div class="p-6 pb-2">
