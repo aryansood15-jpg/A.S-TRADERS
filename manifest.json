@@ -1,0 +1,48 @@
+{
+  "name": "A.S. Traders Moga - Cattle Feed Supplements",
+  "short_name": "A.S. Traders",
+  "description": "Wholesale cattle feed supplements, liquid calcium, rumen buffers and chelated minerals from A.S. Traders, Moga, Punjab.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "id": "as-traders-moga",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0f172a",
+  "theme_color": "#047857",
+  "lang": "en-IN",
+  "categories": ["business", "food", "shopping"],
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/aryansood15-jpg/A.S-TRADERS/main/ChatGPT%20Image%20Aug%2031%2C%202026%2C%2012_31_12%20AM.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/aryansood15-jpg/A.S-TRADERS/main/ChatGPT%20Image%20Aug%2031%2C%202026%2C%2012_31_12%20AM.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/aryansood15-jpg/A.S-TRADERS/main/ChatGPT%20Image%20Aug%2031%2C%202026%2C%2012_31_12%20AM.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "WhatsApp Inquiry",
+      "short_name": "WhatsApp",
+      "url": "./index.html#contact",
+      "description": "Message A.S. Traders on WhatsApp"
+    },
+    {
+      "name": "Product Catalog",
+      "short_name": "Products",
+      "url": "./index.html#products",
+      "description": "Browse all 9 feed formulations"
+    }
+  ]
+}
