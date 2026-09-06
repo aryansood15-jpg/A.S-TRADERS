@@ -180,11 +180,8 @@
         <a href="#about" class="hover:text-emerald-700 transition">About Firm</a>
       </nav>
 
-      <!-- Install App + WhatsApp Buttons -->
+      <!-- WhatsApp Button -->
       <div class="flex items-center space-x-3">
-        <button id="install-app-btn" onclick="triggerInstall()" class="hidden bg-slate-900 hover:bg-slate-800 text-white text-xs sm:text-sm font-bold px-4 sm:px-5 py-2.5 sm:py-3 rounded-xl transition items-center shadow-sm" aria-label="Install App">
-          <i class="fa-solid fa-download text-sm mr-2"></i> Install
-        </button>
         <a href="https://wa.me/918847687578?text=Hello%20A.S.%20Traders,%20I%20want%20to%20inquire%20about%20dairy%20feed%20products."
            target="_blank"
            rel="noopener noreferrer"
@@ -195,17 +192,6 @@
       </div>
     </div>
   </header>
-
-  <!-- Install App Banner (shown once install prompt is available) -->
-  <div id="install-banner" class="hidden fixed top-20 sm:top-24 lg:top-28 left-0 right-0 z-40 bg-emerald-800 text-white">
-    <div class="max-w-7xl mx-auto px-4 py-2.5 flex items-center justify-between gap-3 text-xs sm:text-sm">
-      <span class="flex items-center gap-2"><i class="fa-solid fa-mobile-screen-button"></i> Install the A.S. Traders app</span>
-      <div class="flex items-center gap-2 shrink-0">
-        <button onclick="triggerInstall()" class="bg-white text-emerald-800 font-bold px-3 py-1.5 rounded-lg">Install</button>
-        <button onclick="dismissInstallBanner()" class="text-white/80 px-2" aria-label="Dismiss">✕</button>
-      </div>
-    </div>
-  </div>
 
   <main>
     <!-- Hero Section -->
@@ -230,9 +216,6 @@
             <a href="#products" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm px-7 py-3.5 rounded-lg transition inline-flex items-center shadow-lg">
               Explore All 9 Formulations <i class="fa-solid fa-arrow-down ml-2 text-xs"></i>
             </a>
-            <button id="install-app-btn-hero" onclick="triggerInstall()" class="hidden bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold text-sm px-7 py-3.5 rounded-lg transition items-center">
-              <i class="fa-solid fa-download mr-2 text-xs"></i> Install
-            </button>
           </div>
         </div>
 
@@ -766,9 +749,6 @@
 
   <!-- Sticky Mobile Action Bar -->
   <div class="fixed bottom-0 left-0 right-0 z-40 sm:hidden bg-white border-t border-slate-200 p-2.5 flex gap-2 shadow-2xl">
-    <button id="install-app-btn-mobile" onclick="triggerInstall()" class="hidden flex-1 bg-slate-900 text-white py-2 rounded-lg font-bold text-xs items-center justify-center text-center shadow px-1">
-      <i class="fa-solid fa-download text-xs mr-1"></i> Install
-    </button>
     <a href="https://wa.me/918847687578?text=Hello%20A.S.%20Traders,%20I%20want%20to%20inquire%20about%20feed%20supplements." target="_blank" rel="noopener noreferrer" class="flex-1 bg-emerald-600 text-white py-2.5 rounded-lg font-bold text-xs flex items-center justify-center shadow">
       <i class="fa-brands fa-whatsapp text-base mr-1.5"></i> WhatsApp
     </a>
@@ -792,6 +772,13 @@
     </span>
     <i class="fa-brands fa-whatsapp text-3xl"></i>
   </a>
+
+  <!-- Install App Button (single, placed at end of all content) -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-10 text-center">
+    <button id="install-app-btn" onclick="triggerInstall()" class="hidden mx-auto bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm px-8 py-3.5 rounded-xl transition items-center shadow-lg" aria-label="Install App">
+      <i class="fa-solid fa-download mr-2"></i> Install
+    </button>
+  </div>
 
   <!-- Scripts -->
   <script>
@@ -852,11 +839,8 @@
     // ---------- PWA: Install App logic ----------
     let deferredPrompt = null;
     const installButtons = [
-      document.getElementById('install-app-btn'),
-      document.getElementById('install-app-btn-hero'),
-      document.getElementById('install-app-btn-mobile')
+      document.getElementById('install-app-btn')
     ];
-    const installBanner = document.getElementById('install-banner');
 
     function showInstallUI() {
       installButtons.forEach(btn => {
@@ -865,9 +849,6 @@
           btn.classList.add('flex');
         }
       });
-      if (installBanner && !sessionStorage.getItem('as_traders_install_dismissed')) {
-        installBanner.classList.remove('hidden');
-      }
     }
 
     function hideInstallUI() {
@@ -877,12 +858,6 @@
           btn.classList.remove('flex');
         }
       });
-      if (installBanner) installBanner.classList.add('hidden');
-    }
-
-    function dismissInstallBanner() {
-      if (installBanner) installBanner.classList.add('hidden');
-      sessionStorage.setItem('as_traders_install_dismissed', '1');
     }
 
     window.addEventListener('beforeinstallprompt', (e) => {
