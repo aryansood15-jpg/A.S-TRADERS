@@ -13,19 +13,24 @@
   "categories": ["business", "food", "shopping"],
   "icons": [
     {
-      "src": "https://raw.githubusercontent.com/aryansood15-jpg/A.S-TRADERS/main/ChatGPT%20Image%20Aug%2031%2C%202026%2C%2012_31_12%20AM.png",
-      "sizes": "192x192",
+      "src": "./favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "./apple-touch-icon.png",
+      "sizes": "180x180",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "https://raw.githubusercontent.com/aryansood15-jpg/A.S-TRADERS/main/ChatGPT%20Image%20Aug%2031%2C%202026%2C%2012_31_12%20AM.png",
+      "src": "./favicon.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "https://raw.githubusercontent.com/aryansood15-jpg/A.S-TRADERS/main/ChatGPT%20Image%20Aug%2031%2C%202026%2C%2012_31_12%20AM.png",
+      "src": "./favicon.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
