@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
+
   <!-- Primary Indexing & Search Engine Title (Optimized for Yoast & Google SERP) -->
   <title>A.S. Traders Moga | Cattle Feed Supplements & Minerals</title>
   <meta name="title" content="A.S. Traders Moga | Cattle Feed Supplements & Minerals" />
@@ -19,14 +19,20 @@
   <meta name="geo.position" content="30.8165;75.1717" />
   <meta name="ICBM" content="30.8165, 75.1717" />
 
+  <!-- PWA: Web App Manifest & Theme Color -->
+  <link rel="manifest" href="./manifest.json" />
+  <meta name="theme-color" content="#047857" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
   <!-- Favicon Configuration -->
   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="shortcut icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <meta name="apple-mobile-web-app-title" content="A.S. Traders" />
-  <link rel="manifest" href="/site.webmanifest" />
-  
+
   <!-- Open Graph / Social Media Cards -->
   <meta property="og:locale" content="en_IN" />
   <meta property="og:type" content="website" />
@@ -34,7 +40,6 @@
   <meta property="og:description" content="A.S. Traders in Moga supplies quality cattle feed supplements, liquid calcium, rumen buffers, and chelated minerals across India at wholesale rates." />
   <meta property="og:url" content="https://www.as-traders.in/" />
   <meta property="og:site_name" content="A.S. TRADERS" />
-  <!-- TODO: swap in a dedicated 1200x630 share image (product/farm photo) instead of the square logo for a better social preview -->
   <meta property="og:image" content="https://www.as-traders.in/logo.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -46,13 +51,11 @@
   <meta name="twitter:image" content="https://www.as-traders.in/logo.png" />
 
 <!-- Google tag (gtag.js) -->
-<!-- TODO: replace G-XXXXXXXXXX with your real GA4 Measurement ID — this placeholder is not tracking anything -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-XXXXXXXXXX');
 </script>
   <!-- Preconnect & Asynchronous Stylesheets (Eliminates Render Blocking) -->
@@ -70,10 +73,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   </noscript>
 
-  <!-- NOTE: Tailwind CDN ships the full framework + runtime compilation on every page load, which slows down
-       Core Web Vitals (a ranking factor). Once you have a build step available, replace this with a compiled,
-       purged static stylesheet (e.g. via the Tailwind CLI: npx tailwindcss -o ./styles.css --minify) and link
-       that file instead. Left as CDN here since no build pipeline was provided. -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Schema.org JSON-LD Structured Data -->
@@ -107,14 +106,8 @@
           "longitude": 75.1717
         },
         "areaServed": [
-          {
-            "@type": "AdministrativeArea",
-            "name": "Punjab"
-          },
-          {
-            "@type": "Country",
-            "name": "India"
-          }
+          { "@type": "AdministrativeArea", "name": "Punjab" },
+          { "@type": "Country", "name": "India" }
         ]
       },
       {
@@ -138,34 +131,22 @@
           {
             "@type": "Question",
             "name": "Why are chelated mineral mixtures better for dairy cattle?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Chelated minerals are bonded with amino acids, protecting them from digestive degradation in the rumen. This provides substantially higher biological absorption, improving milk yield, reproductive fertility, and hoof strength."
-            }
+            "acceptedAnswer": { "@type": "Answer", "text": "Chelated minerals are bonded with amino acids, protecting them from digestive degradation in the rumen. This provides substantially higher biological absorption, improving milk yield, reproductive fertility, and hoof strength." }
           },
           {
             "@type": "Question",
             "name": "How does a rumen buffer like R.S. BUFF prevent acidosis?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Rumen buffers containing sodium bicarbonate and magnesium oxide stabilize rumen pH when cattle consume high-concentrate feeds, preventing lactic acidosis and maintaining steady feed intake."
-            }
+            "acceptedAnswer": { "@type": "Answer", "text": "Rumen buffers containing sodium bicarbonate and magnesium oxide stabilize rumen pH when cattle consume high-concentrate feeds, preventing lactic acidosis and maintaining steady feed intake." }
           },
           {
             "@type": "Question",
             "name": "Can CAL-PHOS D.C.P.+ be fed to both cattle and poultry flocks?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. CAL-PHOS D.C.P.+ is a versatile feed-grade calcium and phosphorus formulation designed for both livestock bone mineralization and poultry eggshell strength."
-            }
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. CAL-PHOS D.C.P.+ is a versatile feed-grade calcium and phosphorus formulation designed for both livestock bone mineralization and poultry eggshell strength." }
           },
           {
             "@type": "Question",
             "name": "How do I order in bulk or inquire about distributor dealership?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "You can connect directly with Aryan via WhatsApp at +91-8847687578 or email info@as-traders.in for commercial price sheets and distribution terms."
-            }
+            "acceptedAnswer": { "@type": "Answer", "text": "You can connect directly with Aryan via WhatsApp at +91-8847687578 or email info@as-traders.in for commercial price sheets and distribution terms." }
           }
         ]
       }
@@ -179,17 +160,17 @@
   <!-- Smart Auto-Hiding Navigation Header -->
   <header id="main-header" class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-slate-200 shadow-sm transition-transform duration-300 ease-in-out">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-24 lg:h-28 flex items-center justify-between">
-      
+
     <!-- Official Brand Logo -->
       <a href="/" class="flex items-center group py-1" aria-label="A.S. Traders Home">
-        <img src="https://raw.githubusercontent.com/aryansood15-jpg/A.S-TRADERS/main/ChatGPT%20Image%20Aug%2031%2C%202026%2C%2012_31_12%20AM.png" 
-             alt="A.S. Traders logo - cattle feed supplements Moga Punjab" 
+        <img src="https://raw.githubusercontent.com/aryansood15-jpg/A.S-TRADERS/main/ChatGPT%20Image%20Aug%2031%2C%202026%2C%2012_31_12%20AM.png"
+             alt="A.S. Traders logo - cattle feed supplements Moga Punjab"
              width="400"
              height="96"
-             class="h-16 sm:h-20 lg:h-24 w-auto max-w-[280px] sm:max-w-[400px] lg:max-w-[480px] object-contain transition-transform duration-200 group-hover:scale-105" 
+             class="h-16 sm:h-20 lg:h-24 w-auto max-w-[280px] sm:max-w-[400px] lg:max-w-[480px] object-contain transition-transform duration-200 group-hover:scale-105"
              onerror="this.src='./ChatGPT Image Aug 31, 2026, 12_31_12 AM.png'; this.onerror=null;" />
       </a>
-      
+
       <!-- Navigation Links -->
       <nav class="hidden lg:flex items-center space-x-8 text-sm font-bold text-slate-700">
         <a href="#species" class="hover:text-emerald-700 transition">Target Species</a>
@@ -199,18 +180,32 @@
         <a href="#about" class="hover:text-emerald-700 transition">About Firm</a>
       </nav>
 
-      <!-- WhatsApp Button -->
+      <!-- Install App + WhatsApp Buttons -->
       <div class="flex items-center space-x-3">
-        <a href="https://wa.me/918847687578?text=Hello%20A.S.%20Traders,%20I%20want%20to%20inquire%20about%20dairy%20feed%20products." 
-           target="_blank" 
-           rel="noopener noreferrer" 
-           class="bg-emerald-700 hover:bg-emerald-800 text-white text-xs sm:text-sm font-bold px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl transition inline-flex items-center shadow-sm" 
+        <button id="install-app-btn" onclick="triggerInstall()" class="hidden bg-slate-900 hover:bg-slate-800 text-white text-xs sm:text-sm font-bold px-4 sm:px-5 py-2.5 sm:py-3 rounded-xl transition items-center shadow-sm" aria-label="Install App">
+          <i class="fa-solid fa-download text-sm mr-2"></i> <span class="hidden sm:inline">Install</span><span class="sm:hidden">App</span>
+        </button>
+        <a href="https://wa.me/918847687578?text=Hello%20A.S.%20Traders,%20I%20want%20to%20inquire%20about%20dairy%20feed%20products."
+           target="_blank"
+           rel="noopener noreferrer"
+           class="bg-emerald-700 hover:bg-emerald-800 text-white text-xs sm:text-sm font-bold px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl transition inline-flex items-center shadow-sm"
            aria-label="WhatsApp Inquiry">
           <i class="fa-brands fa-whatsapp text-base mr-2"></i> WhatsApp
         </a>
       </div>
     </div>
   </header>
+
+  <!-- Install App Banner (shown once install prompt is available) -->
+  <div id="install-banner" class="hidden fixed top-20 sm:top-24 lg:top-28 left-0 right-0 z-40 bg-emerald-800 text-white">
+    <div class="max-w-7xl mx-auto px-4 py-2.5 flex items-center justify-between gap-3 text-xs sm:text-sm">
+      <span class="flex items-center gap-2"><i class="fa-solid fa-mobile-screen-button"></i> Install the A.S. Traders app for quick access &amp; offline browsing.</span>
+      <div class="flex items-center gap-2 shrink-0">
+        <button onclick="triggerInstall()" class="bg-white text-emerald-800 font-bold px-3 py-1.5 rounded-lg">Install</button>
+        <button onclick="dismissInstallBanner()" class="text-white/80 px-2" aria-label="Dismiss">✕</button>
+      </div>
+    </div>
+  </div>
 
   <main>
     <!-- Hero Section -->
@@ -235,6 +230,9 @@
             <a href="#products" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm px-7 py-3.5 rounded-lg transition inline-flex items-center shadow-lg">
               Explore All 9 Formulations <i class="fa-solid fa-arrow-down ml-2 text-xs"></i>
             </a>
+            <button id="install-app-btn-hero" onclick="triggerInstall()" class="hidden bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold text-sm px-7 py-3.5 rounded-lg transition items-center">
+              <i class="fa-solid fa-download mr-2 text-xs"></i> Install App
+            </button>
           </div>
         </div>
 
@@ -486,7 +484,10 @@
               </div>
             </div>
           </div>
-          <div class="p-6 pt-2">
+          <div class="p-6 pt-2 space-y-2">
+            <a href="https://www.amazon.in/dp/B0HHWZ73FN" target="_blank" rel="noopener noreferrer" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 text-xs font-bold py-2.5 rounded-lg text-center transition flex items-center justify-center">
+              <i class="fa-brands fa-amazon mr-2 text-sm"></i> Buy on Amazon
+            </a>
             <a href="https://wa.me/918847687578?text=Hello%20A.S.%20Traders,%20please%20send%20quote%20for%20R.S.%20RAKSHAK." target="_blank" rel="noopener noreferrer" class="w-full bg-slate-900 hover:bg-emerald-700 text-white text-xs font-bold py-2.5 rounded-lg text-center transition flex items-center justify-center">
               <i class="fa-brands fa-whatsapp mr-2 text-emerald-400 text-sm"></i> Inquire Price Quote
             </a>
@@ -578,7 +579,10 @@
               </div>
             </div>
           </div>
-          <div class="p-6 pt-2">
+          <div class="p-6 pt-2 space-y-2">
+            <a href="https://amzn.in/d/047IXN1N" target="_blank" rel="noopener noreferrer" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 text-xs font-bold py-2.5 rounded-lg text-center transition flex items-center justify-center">
+              <i class="fa-brands fa-amazon mr-2 text-sm"></i> Buy on Amazon
+            </a>
             <a href="https://wa.me/918847687578?text=Hello%20A.S.%20Traders,%20please%20send%20quote%20for%20R.S.%20BUFF." target="_blank" rel="noopener noreferrer" class="w-full bg-slate-900 hover:bg-emerald-700 text-white text-xs font-bold py-2.5 rounded-lg text-center transition flex items-center justify-center">
               <i class="fa-brands fa-whatsapp mr-2 text-emerald-400 text-sm"></i> Inquire Price Quote
             </a>
@@ -598,7 +602,6 @@
         </div>
 
         <div class="space-y-4">
-          <!-- FAQ Item 1 -->
           <div class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
             <button class="faq-toggle w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
               <span>Why are chelated mineral mixtures better for dairy cattle?</span>
@@ -609,7 +612,6 @@
             </div>
           </div>
 
-          <!-- FAQ Item 2 -->
           <div class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
             <button class="faq-toggle w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
               <span>How does a rumen buffer like R.S. BUFF prevent acidosis?</span>
@@ -620,7 +622,6 @@
             </div>
           </div>
 
-          <!-- FAQ Item 3 -->
           <div class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
             <button class="faq-toggle w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
               <span>Can CAL-PHOS D.C.P.+ be fed to both cattle and poultry flocks?</span>
@@ -631,7 +632,6 @@
             </div>
           </div>
 
-          <!-- FAQ Item 4 -->
           <div class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
             <button class="faq-toggle w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
               <span>How do I order in bulk or inquire about distributor dealership?</span>
@@ -766,6 +766,9 @@
 
   <!-- Sticky Mobile Action Bar -->
   <div class="fixed bottom-0 left-0 right-0 z-40 sm:hidden bg-white border-t border-slate-200 p-2.5 flex gap-2 shadow-2xl">
+    <button id="install-app-btn-mobile" onclick="triggerInstall()" class="hidden flex-1 bg-slate-900 text-white py-2.5 rounded-lg font-bold text-xs items-center justify-center shadow">
+      <i class="fa-solid fa-download text-xs mr-1.5"></i> Install App
+    </button>
     <a href="https://wa.me/918847687578?text=Hello%20A.S.%20Traders,%20I%20want%20to%20inquire%20about%20feed%20supplements." target="_blank" rel="noopener noreferrer" class="flex-1 bg-emerald-600 text-white py-2.5 rounded-lg font-bold text-xs flex items-center justify-center shadow">
       <i class="fa-brands fa-whatsapp text-base mr-1.5"></i> WhatsApp
     </a>
@@ -775,10 +778,10 @@
   </div>
 
   <!-- Persistent Floating WhatsApp Button -->
-  <a href="https://wa.me/918847687578?text=Hello%20A.S.%20Traders,%20I%20have%20an%20inquiry%20regarding%20animal%20feed%20supplements." 
-     target="_blank" 
-     rel="noopener noreferrer" 
-     class="fixed bottom-20 sm:bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20ba5a] text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 group focus:outline-none focus:ring-4 focus:ring-emerald-300" 
+  <a href="https://wa.me/918847687578?text=Hello%20A.S.%20Traders,%20I%20have%20an%20inquiry%20regarding%20animal%20feed%20supplements."
+     target="_blank"
+     rel="noopener noreferrer"
+     class="fixed bottom-20 sm:bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20ba5a] text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 group focus:outline-none focus:ring-4 focus:ring-emerald-300"
      aria-label="Chat on WhatsApp">
     <span class="absolute right-full mr-3 bg-slate-900 text-white text-xs font-semibold px-3 py-1.5 rounded-lg shadow-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none hidden sm:block">
       Chat with Us on WhatsApp <i class="fa-solid fa-circle-check text-emerald-400 ml-1"></i>
@@ -798,7 +801,6 @@
 
     window.addEventListener('scroll', function() {
       const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
       if (currentScroll > 100) {
         if (currentScroll > lastScrollTop) {
           header.classList.add('-translate-y-full');
@@ -808,7 +810,6 @@
       } else {
         header.classList.remove('-translate-y-full');
       }
-
       lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
     }, { passive: true });
 
@@ -843,10 +844,73 @@
       const name = document.getElementById('custName').value;
       const phone = document.getElementById('custPhone').value;
       const product = document.getElementById('custProduct').value;
-      
       const message = `Hello A.S. Traders,\n\nName: ${name}\nPhone: ${phone}\nRequirement: ${product}\n\nPlease share price and supply details.`;
       const encoded = encodeURIComponent(message);
       window.open(`https://wa.me/918847687578?text=${encoded}`, '_blank');
+    }
+
+    // ---------- PWA: Install App logic ----------
+    let deferredPrompt = null;
+    const installButtons = [
+      document.getElementById('install-app-btn'),
+      document.getElementById('install-app-btn-hero'),
+      document.getElementById('install-app-btn-mobile')
+    ];
+    const installBanner = document.getElementById('install-banner');
+
+    function showInstallUI() {
+      installButtons.forEach(btn => {
+        if (btn) {
+          btn.classList.remove('hidden');
+          btn.classList.add('flex');
+        }
+      });
+      if (installBanner && !sessionStorage.getItem('as_traders_install_dismissed')) {
+        installBanner.classList.remove('hidden');
+      }
+    }
+
+    function hideInstallUI() {
+      installButtons.forEach(btn => {
+        if (btn) {
+          btn.classList.add('hidden');
+          btn.classList.remove('flex');
+        }
+      });
+      if (installBanner) installBanner.classList.add('hidden');
+    }
+
+    function dismissInstallBanner() {
+      if (installBanner) installBanner.classList.add('hidden');
+      sessionStorage.setItem('as_traders_install_dismissed', '1');
+    }
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      showInstallUI();
+    });
+
+    async function triggerInstall() {
+      if (!deferredPrompt) return;
+      deferredPrompt.prompt();
+      const { outcome } = await deferredPrompt.userChoice;
+      deferredPrompt = null;
+      hideInstallUI();
+    }
+
+    window.addEventListener('appinstalled', () => {
+      hideInstallUI();
+      deferredPrompt = null;
+    });
+
+    // Register the service worker for offline support & installability
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js').catch(err => {
+          console.warn('Service worker registration failed:', err);
+        });
+      });
     }
   </script>
 </body>
